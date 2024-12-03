@@ -1,0 +1,6 @@
+if SHIELD_LUMBERJACK
+
+config ZMK_KEYBOARD_NAME
+    default "lumberjack"
+
+endif
