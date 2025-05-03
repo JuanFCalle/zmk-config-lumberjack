@@ -22,6 +22,15 @@
 // &encoder { status = "okay"; };
 
 / {
+    behaviors {
+        volknob: volume_encoder {
+            compatible = "zmk,behavior-sensor-rotate";
+            label = "ENCODER_VOLUME_KNOB";
+            #sensor-binding-cells = <0>;
+            bindings = <&kp C_VOLUME_UP>, <&kp C_VOLUME_DOWN>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
