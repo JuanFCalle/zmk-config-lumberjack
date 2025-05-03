@@ -1,0 +1,2 @@
+config SHIELD_LUMBERJACK
+   def_bool $(shields_list_contains, lumberjack)
